@@ -9,7 +9,7 @@ using UnityEngine.Events;
 public class CameraSwitch : MonoBehaviour
 {
     Controls Input;
-    int CamIndex = 0;
+    public int CamIndex = 0;
 
     [Tooltip("These are the cameras to cycle in between")]
     [Header("Cameras")]
