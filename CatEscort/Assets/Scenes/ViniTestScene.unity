@@ -453,7 +453,8 @@ MonoBehaviour:
   waypoints: {fileID: 0}
   moveSpeed: 5
   distanceThreshold: 1
-  startMovement: 0
+  wallCheckdistance: 1.5
+  floorCheckDistance: 2
 --- !u!1 &681134630
 GameObject:
   m_ObjectHideFlags: 0
