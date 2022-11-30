@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class pickUp : MonoBehaviour
 {
-    public CheckIfVisible see;
+    public CameraSwitch cam;
     public bool pickedUp = false;
+    public int cameraIndex;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,7 +16,7 @@ public class pickUp : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyUp(KeyCode.Space) && see.isVisible == true){
+        if(Input.GetKeyDown(KeyCode.Space) && cam.CamIndex == cameraIndex){
             Destroy(gameObject);
             pickedUp = true;
         }

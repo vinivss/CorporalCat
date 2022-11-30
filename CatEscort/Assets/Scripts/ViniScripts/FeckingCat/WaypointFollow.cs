@@ -63,7 +63,7 @@ public class WaypointFollow : MonoBehaviour
         {
             Gizmos.color = Color.white;
             Gizmos.DrawSphere(FloorHit, 0.05f);
-            Debug.Log(FloorHit);
+            //Debug.Log(FloorHit);
         }
     }
 
@@ -80,7 +80,7 @@ public class WaypointFollow : MonoBehaviour
         {
             hitFloor = true;
             FloorHit = floorHit.point;
-            Debug.Log(floorHit.point);
+            //Debug.Log(floorHit.point);
             return true;
         }
         return false;

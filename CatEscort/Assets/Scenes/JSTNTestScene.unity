@@ -374,10 +374,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb36d9440e2651d4985fb2b0dc21983f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cam: {fileID: 1855382341}
   see: {fileID: 463287082}
   p: {fileID: 781040362}
   rb: {fileID: 463287081}
   forwardForce: 2000
+  cameraIndex: 1
 --- !u!135 &463287077
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -774,8 +776,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91faa5015d5e28940ac5b0c579d7034d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  see: {fileID: 781040363}
+  cam: {fileID: 1855382341}
   pickedUp: 0
+  cameraIndex: 2
 --- !u!114 &781040363
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2011,6 +2014,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7453bd0c69d1c24984d6c622ac09e88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CamIndex: 0
   Cameras: []
   Events:
     m_PersistentCalls:
