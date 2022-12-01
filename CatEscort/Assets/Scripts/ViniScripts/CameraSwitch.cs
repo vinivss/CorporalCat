@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using Cinemachine;
 using UnityEngine.Events;
+using System.Linq;
 
 public class CameraSwitch : MonoBehaviour
 {
@@ -20,6 +21,8 @@ public class CameraSwitch : MonoBehaviour
     public UnityEvent Events;
 
     CinemachineVirtualCamera CurrentCam;
+    [SerializeField]Transform CameraFollow;
+    [SerializeField] GameObject corporalCat; 
 
     private void Awake()
     {
@@ -48,10 +51,12 @@ public class CameraSwitch : MonoBehaviour
         {
             Cameras.Add(n);
         }
+        Cameras = Cameras.OrderBy(go => go.name).ToList();
 
         //Getting the default camera and setting that to be the active camera
         CurrentCam = Cameras[CamIndex];
         CurrentCam.Priority = 100;
+        this.gameObject.transform.LookAt(new Vector3(CameraFollow.transform.position.x, 0f, CameraFollow.transform.position.z));
     }
 
     private void ChangeToNextCam()
@@ -68,6 +73,7 @@ public class CameraSwitch : MonoBehaviour
         }
         CurrentCam = Cameras[CamIndex];
         CurrentCam.Priority = 100;
+        this.gameObject.transform.LookAt(new Vector3(CameraFollow.transform.position.x, 0f, CameraFollow.transform.position.z));
     }
 
     private void ChangeToPrevCam()
@@ -84,6 +90,7 @@ public class CameraSwitch : MonoBehaviour
         }
         CurrentCam = Cameras[CamIndex];
         CurrentCam.Priority = 100;
+        this.gameObject.transform.LookAt(new Vector3(CameraFollow.transform.position.x, 0f, CameraFollow.transform.position.z));
     }
 
     private void OnEnable()
