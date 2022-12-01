@@ -9,7 +9,9 @@ public class moveTruck : MonoBehaviour
     public pickUp p;
 
     public Rigidbody rb;
-    public float forwardForce = 10000f;
+    public float XForce = 10000f;
+    public float YForce = 10000f;
+    public float ZForce = 10000f;
     public int cameraIndex;
 
     // Start is called before the first frame update
@@ -23,7 +25,7 @@ public class moveTruck : MonoBehaviour
     {
         Debug.Log(cam.CamIndex);
         if(Input.GetKeyDown(KeyCode.Space) && p.pickedUp == true && cam.CamIndex == cameraIndex){
-            rb.AddForce(forwardForce*Time.deltaTime,0,0);
+            rb.AddForce(XForce*Time.deltaTime,YForce*Time.deltaTime,ZForce*Time.deltaTime);
         }
     }
 
