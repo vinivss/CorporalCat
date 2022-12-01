@@ -450,7 +450,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32d0aa5e6ecde2b48b678104e0c9947a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waypoints: {fileID: 1549962587}
+  waypoints: {fileID: 0}
   moveSpeed: 5
   distanceThreshold: 1
   wallCheckdistance: 1.5
@@ -1732,7 +1732,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7453bd0c69d1c24984d6c622ac09e88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CamIndex: 0
   Cameras: []
   Events:
     m_PersistentCalls:
