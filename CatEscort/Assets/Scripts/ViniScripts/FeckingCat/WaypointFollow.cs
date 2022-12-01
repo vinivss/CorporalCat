@@ -24,7 +24,7 @@ public class WaypointFollow : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        waypoints = FindObjectOfType<Waypoints>();  
+        //waypoints = FindObjectOfType<Waypoints>();  
         currentWaypoint = waypoints.GetNextWaypoint(currentWaypoint);
         transform.position = currentWaypoint.position;
 
