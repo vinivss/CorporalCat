@@ -7,7 +7,7 @@ public class WaypointFollow : MonoBehaviour
 {
     public Waypoints waypoints;
 
-    [SerializeField] float moveSpeed = 5f;
+    public float moveSpeed = 5f;
 
     Transform currentWaypoint;
     [SerializeField] float distanceThreshold;
