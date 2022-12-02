@@ -6,6 +6,10 @@ TagManager:
   tags:
   - CameraFollow
   - Waypoint
+  - cannon
+  - ball
+  - wall
+  - cat
   layers:
   - Default
   - TransparentFX

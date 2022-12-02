@@ -7,22 +7,27 @@ public class Pencil : MonoBehaviour
 
     public Rigidbody rb;
     public CameraSwitch cam;
-    public CheckIfVisible canSee;
-    public int camNum;
+    //public CheckIfVisible canSee;
+    //public int camNum;
     public float XForce = 10000f;
     public float YForce = 10000f;
     public float ZForce = 10000f;
     
     // Start is called before the first frame update
-    void Start()
+    public void Start()
     {
         
     }
 
     // Update is called once per frame
-    void Update()
+    public void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space) && cam.CamIndex == camNum)
+
+    }
+    public void movePencil()
+    {
+        //Debug.Log(cam.CamIndex);
+        if (cam.CamIndex == 1)
         {
             rb.AddForce(XForce * Time.deltaTime, YForce * Time.deltaTime, ZForce * Time.deltaTime);
         }
