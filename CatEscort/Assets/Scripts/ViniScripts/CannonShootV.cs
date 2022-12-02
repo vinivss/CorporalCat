@@ -8,6 +8,7 @@ public class CannonShootV : MonoBehaviour
 
     bool isLoaded = false;
     StatueChangePose changePose;
+    [SerializeField] GameObject Cannonball;
     
     // Start is called before the first frame update
     void Start()
@@ -39,8 +40,7 @@ public class CannonShootV : MonoBehaviour
 
             anim.SetBool("Drop", false);
             anim.Play("IdlePose", -1, 0f);
+            
         }
-
-
     }
 }
