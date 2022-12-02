@@ -6,6 +6,9 @@ TagManager:
   tags:
   - CameraFollow
   - Waypoint
+  - Pencil
+  - Cannonball
+  - Torch
   layers:
   - Default
   - TransparentFX
