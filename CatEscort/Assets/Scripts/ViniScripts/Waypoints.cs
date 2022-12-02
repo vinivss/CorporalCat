@@ -8,7 +8,7 @@ public class Waypoints : MonoBehaviour
     [Header("Editor")]
     [Tooltip("This is the radius of the waypoint Spheres")]
     [SerializeField] float waypointRadius;
-
+    [SerializeField] Animator Catanim;
     [Tooltip("Will this path loop around")]
     public bool LoopingPath;
     private void OnDrawGizmos()
@@ -47,6 +47,7 @@ public class Waypoints : MonoBehaviour
         {
             return transform.GetChild(0);
         }
+        Catanim.SetBool("Win", true);
         return null;
     }
 }
