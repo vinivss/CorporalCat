@@ -242,19 +242,19 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: YrelSpeed
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: IsMoving
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -431,7 +431,7 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: -1040654169759527096}
-    m_Position: {x: 490, y: 110, z: 0}
+    m_Position: {x: 430, y: 110, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 6554175190479630616}
     m_Position: {x: 405, y: 185, z: 0}
@@ -458,7 +458,7 @@ AnimatorStateMachine:
     m_Position: {x: 650, y: 640, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 5224799880415946728}
-    m_Position: {x: 500, y: 0, z: 0}
+    m_Position: {x: 440, y: 0, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
