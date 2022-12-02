@@ -1544,7 +1544,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9e2413b81bb3f7d458f320e55527ab7f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.08
+      value: 4.45
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9e2413b81bb3f7d458f320e55527ab7f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1552,7 +1552,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9e2413b81bb3f7d458f320e55527ab7f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 67.19
+      value: 68.19
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9e2413b81bb3f7d458f320e55527ab7f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1581,6 +1581,14 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 9e2413b81bb3f7d458f320e55527ab7f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -6011416419171642944, guid: 9e2413b81bb3f7d458f320e55527ab7f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.58
+      objectReference: {fileID: 0}
+    - target: {fileID: -6011416419171642944, guid: 9e2413b81bb3f7d458f320e55527ab7f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.37
       objectReference: {fileID: 0}
     - target: {fileID: -65295746192168432, guid: 9e2413b81bb3f7d458f320e55527ab7f, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -2851,6 +2859,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waypointRadius: 0.75
+  Catanim: {fileID: 0}
   LoopingPath: 0
 --- !u!4 &1549962588
 Transform:
