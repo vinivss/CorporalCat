@@ -50,6 +50,7 @@ MonoBehaviour:
   waypoints: {fileID: 0}
   moveSpeed: 50
   distanceThreshold: 0.5
+  Cat: 0
   wallCheckdistance: 1.5
   floorCheckDistance: 10
   CatisMoving: 0

@@ -7,6 +7,7 @@ public class DropShitAndDestroy : MonoBehaviour
     public StatueChangePose Statues;
     [SerializeField] Animator CannonballAnim;
     [SerializeField] Animator TorchAnimator;
+    [SerializeField] Animator SwordAnim;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,15 +27,19 @@ public class DropShitAndDestroy : MonoBehaviour
             switch(Statues.index)
             {
                 case 0:
-                    DestroyImmediate(other.gameObject);
+                    DestroyImmediate(other);
+                    SwordAnim.SetBool("Drop", true);
+                    Destroy(other.gameObject);
                     break;
                 case 1:
                     CannonballAnim.SetBool("Drop", true);
-                    DestroyImmediate(other.gameObject);
+                    SwordAnim.SetBool("Drop", true);
+                    Destroy(other.gameObject);
                     break;
                 case 2:
                     TorchAnimator.SetBool("Drop", true);
-                    DestroyImmediate(other.gameObject);
+                    SwordAnim.SetBool("Drop", true);
+                    Destroy(other.gameObject);
                     break;
             }
         }

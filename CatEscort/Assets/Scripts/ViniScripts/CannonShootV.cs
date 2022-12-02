@@ -31,6 +31,7 @@ public class CannonShootV : MonoBehaviour
 
             anim.SetBool("Drop", false);
             anim.Play("IdlePose", -1, 0f);
+           
         }
 
         if(other.tag == "Torch" && isLoaded == true)
@@ -39,7 +40,10 @@ public class CannonShootV : MonoBehaviour
             Animator anim = other.GetComponent<Animator>();
 
             anim.SetBool("Drop", false);
-            anim.Play("IdlePose", -1, 0f);
+            anim.Play("TorchIdle", -1, 0f);
+            Cannonball.SetActive(true);
+            WaypointFollow wf = Cannonball.GetComponent<WaypointFollow>();
+            wf.enabled = true;
             
         }
     }
