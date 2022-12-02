@@ -3,7 +3,57 @@ guid: 7ee716efdf033fb4b92d33ea76433fe5
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: base
+    second: {fileID: 2100000, guid: 0f5bae27adccd804da5fc5d1ce04658b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bumper_b
+    second: {fileID: 2100000, guid: 39bcc320f1db71f48855af7c3306cdaf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bumper_f
+    second: {fileID: 2100000, guid: 29f7bf9252b24c6458f6327454726cb2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: center
+    second: {fileID: 2100000, guid: 38aed74a663c95541b53d12ef8f2473f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: grate_f
+    second: {fileID: 2100000, guid: 7cfb0f7e40a1c9e4d8500203a396d439, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: keyhole
+    second: {fileID: 2100000, guid: 9cc40c41d0945c64597876fcfad5ad62, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lights_b
+    second: {fileID: 2100000, guid: decfe32389346184daac49c5882a39ed, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lights_f
+    second: {fileID: 2100000, guid: 616b1e816ac82494e9fb868f6502f427, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: steering_w
+    second: {fileID: 2100000, guid: 9af07295791926d48b9bcc21c20e9dae, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wheels
+    second: {fileID: 2100000, guid: 38ef15ecb2ab88d41984e091f5b5e4ef, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
