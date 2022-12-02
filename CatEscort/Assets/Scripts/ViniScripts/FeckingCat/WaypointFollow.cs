@@ -15,6 +15,8 @@ public class WaypointFollow : MonoBehaviour
     [SerializeField] float wallCheckdistance = 1.5f;
     [SerializeField] float floorCheckDistance = 2f;
 
+    public bool CatisMoving;
+
     Vector3 WallHit;
     Vector3 FloorHit;
     bool hitWall;
@@ -73,6 +75,7 @@ public class WaypointFollow : MonoBehaviour
         {
             hitWall = true;
             WallHit = wallHit.point;
+            CatisMoving = false;
             return false;
         }
 
@@ -81,8 +84,10 @@ public class WaypointFollow : MonoBehaviour
             hitFloor = true;
             FloorHit = floorHit.point;
             //Debug.Log(floorHit.point);
+            CatisMoving = true;
             return true;
         }
+        CatisMoving = false;
         return false;
         
     }

@@ -15,14 +15,14 @@ public class CameraSwitch : MonoBehaviour
     [Tooltip("These are the cameras to cycle in between")]
     [Header("Cameras")]
     public List<CinemachineVirtualCamera> Cameras = new List<CinemachineVirtualCamera>();
-
+    [SerializeField] Transform CameraFollow;
+    [SerializeField] GameObject corporalCat;
     [Tooltip("These are the Events that the space bar will activate")]
     [Header("Events")]
     public UnityEvent Events;
 
     CinemachineVirtualCamera CurrentCam;
-    [SerializeField]Transform CameraFollow;
-    [SerializeField] GameObject corporalCat; 
+
 
     private void Awake()
     {
@@ -56,14 +56,14 @@ public class CameraSwitch : MonoBehaviour
         //Getting the default camera and setting that to be the active camera
         CurrentCam = Cameras[CamIndex];
         CurrentCam.Priority = 100;
-        this.gameObject.transform.LookAt(new Vector3(CameraFollow.transform.position.x, 0f, CameraFollow.transform.position.z));
+       // corporalCat.transform.LookAt(new Vector3(CameraFollow.transform.position.x, CameraFollow.transform.position.y, CameraFollow.transform.position.z));
     }
 
     private void ChangeToNextCam()
     {
         CurrentCam.Priority = 0;
         //check if Camera is at end of list
-        if(CamIndex == (Cameras.Count - 1))
+        if (CamIndex == (Cameras.Count - 1))
         {
             CamIndex = 0;
         }
@@ -73,7 +73,8 @@ public class CameraSwitch : MonoBehaviour
         }
         CurrentCam = Cameras[CamIndex];
         CurrentCam.Priority = 100;
-        this.gameObject.transform.LookAt(new Vector3(CameraFollow.transform.position.x, 0f, CameraFollow.transform.position.z));
+        //corporalCat.transform.LookAt(CameraFollow);
+
     }
 
     private void ChangeToPrevCam()
@@ -90,7 +91,7 @@ public class CameraSwitch : MonoBehaviour
         }
         CurrentCam = Cameras[CamIndex];
         CurrentCam.Priority = 100;
-        this.gameObject.transform.LookAt(new Vector3(CameraFollow.transform.position.x, 0f, CameraFollow.transform.position.z));
+        //corporalCat.gameObject.transform.LookAt(new Vector3(CameraFollow.transform.position.x, CameraFollow.transform.position.y, CameraFollow.transform.position.z));
     }
 
     private void OnEnable()
