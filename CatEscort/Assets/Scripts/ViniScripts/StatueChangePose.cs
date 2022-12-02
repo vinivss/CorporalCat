@@ -6,7 +6,7 @@ public class StatueChangePose : MonoBehaviour
 {
     public List<GameObject> statuePoses;
 
-    int index = 0;
+    public int index = 0;
     CameraSwitch camSwitch;
     // Start is called before the first frame update
     void Start()

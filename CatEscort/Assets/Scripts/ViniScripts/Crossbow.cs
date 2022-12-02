@@ -17,7 +17,7 @@ public class Crossbow : MonoBehaviour
     {
         if(cameraSwitch.CamIndex == 1)
         {
-           Instantiate(pencilPrefab);
+           Instantiate(pencilPrefab, new Vector3(0,0,0), Quaternion.identity);
            WaypointFollow waypointFollow = pencilPrefab.GetComponent<WaypointFollow>();
             waypointFollow.waypoints =  intendedFollow;
             waypointFollow.enabled = true;

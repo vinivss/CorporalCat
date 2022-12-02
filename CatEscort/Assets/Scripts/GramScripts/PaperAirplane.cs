@@ -17,10 +17,10 @@ public class PaperAirplane : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(cam.CamIndex == 2)
+        if (cam.CamIndex == 1)
         {
             airplane = GetComponent<Rigidbody>();
-            airplane.AddForce(transform.forward * fwdForce);
+            airplane.AddForce(transform.right * fwdForce);
         }
     }
 }
