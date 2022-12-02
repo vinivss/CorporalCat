@@ -1,14 +1,9 @@
 fileFormatVersion: 2
-guid: 23686b45691115941a2e02b3a09f1813
+guid: 31b1c795c1f095a47b2d129c9e6882c5
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: bow
-    second: {fileID: 2100000, guid: b2928fa7f063c5c498650ad7166d9d54, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
