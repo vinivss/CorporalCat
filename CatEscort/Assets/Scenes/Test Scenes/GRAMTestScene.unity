@@ -1463,6 +1463,11 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1 &989345546 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5413084703906675886, guid: a51b66317caf87b4ca3f97a7af74e980, type: 3}
+  m_PrefabInstance: {fileID: 1981813253}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1153080260
 GameObject:
   m_ObjectHideFlags: 0
@@ -2524,8 +2529,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CamIndex: 0
   Cameras: []
-  CameraFollow: {fileID: 1992161873}
-  corporalCat: {fileID: 0}
+  CameraFollow: {fileID: 963194228}
+  corporalCat: {fileID: 989345546}
   Events:
     m_PersistentCalls:
       m_Calls:
