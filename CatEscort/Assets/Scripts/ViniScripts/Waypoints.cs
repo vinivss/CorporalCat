@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Waypoints : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class Waypoints : MonoBehaviour
     [SerializeField] Animator Catanim;
     [Tooltip("Will this path loop around")]
     public bool LoopingPath;
+    public Animator fadeTransition;
     private void OnDrawGizmos()
     {
         foreach(Transform t in transform)
@@ -47,7 +49,16 @@ public class Waypoints : MonoBehaviour
         {
             return transform.GetChild(0);
         }
-        Catanim.Play("Win", -1, 0f);
+        Catanim.SetBool("Win", true);
+        
+        StartCoroutine(NextLevel(SceneManager.GetActiveScene().buildIndex + 1));
+        //Catanim.Play("Win", -1, 0f);
         return null;
+    }
+    IEnumerator NextLevel(int levelIndex)
+    {
+        fadeTransition.SetTrigger("Start");
+        yield return new WaitForSeconds(2f);
+        SceneManager.LoadScene(levelIndex);
     }
 }
