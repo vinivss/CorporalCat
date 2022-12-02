@@ -2338,6 +2338,7 @@ GameObject:
   - component: {fileID: 1770529372}
   - component: {fileID: 1770529371}
   - component: {fileID: 1770529370}
+  - component: {fileID: 1770529373}
   m_Layer: 0
   m_Name: Floor
   m_TagString: Untagged
@@ -2410,6 +2411,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &1770529373
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1770529368}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1777954451
 GameObject:
   m_ObjectHideFlags: 3
@@ -2706,11 +2721,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5413084702824335592, guid: a51b66317caf87b4ca3f97a7af74e980, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.1346
+      value: 1.37
       objectReference: {fileID: 0}
     - target: {fileID: 5413084702824335592, guid: a51b66317caf87b4ca3f97a7af74e980, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 11.73
+      value: 12.085
       objectReference: {fileID: 0}
     - target: {fileID: 5413084702824335592, guid: a51b66317caf87b4ca3f97a7af74e980, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2748,6 +2763,10 @@ PrefabInstance:
       propertyPath: waypoints
       value: 
       objectReference: {fileID: 1549962587}
+    - target: {fileID: 5413084703906675873, guid: a51b66317caf87b4ca3f97a7af74e980, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.093
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a51b66317caf87b4ca3f97a7af74e980, type: 3}
 --- !u!1 &1992161871
