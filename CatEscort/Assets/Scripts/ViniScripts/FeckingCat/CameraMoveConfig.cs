@@ -15,7 +15,7 @@ public class CameraMoveConfig : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        WaypointFollow = WaypointFollow.FindObjectOfType<WaypointFollow>();
+        WaypointFollow = WaypointFollow.GetComponent<WaypointFollow>();
     }
     private void LateUpdate()
     {

@@ -11,7 +11,7 @@ public class WaypointFollow : MonoBehaviour
 
     Transform currentWaypoint;
     [SerializeField] float distanceThreshold;
-
+    [SerializeField] bool Cat;
     [SerializeField] float wallCheckdistance = 1.5f;
     [SerializeField] float floorCheckDistance = 2f;
     //[SerializeField] bool checkFloor = true;
@@ -21,6 +21,7 @@ public class WaypointFollow : MonoBehaviour
     Vector3 FloorHit;
     bool hitWall;
     bool hitFloor;
+    
 
 
     
@@ -76,7 +77,16 @@ public class WaypointFollow : MonoBehaviour
         {
             hitWall = true;
             WallHit = wallHit.point;
-            CatisMoving = false;
+            if (Cat == true)
+            {
+                Debug.LogWarning("A");
+                CatisMoving = false;
+            }
+                
+
+            if (wallHit.collider.isTrigger == true)
+                return true;
+
             return false;
         }
 
@@ -85,10 +95,18 @@ public class WaypointFollow : MonoBehaviour
             hitFloor = true;
             FloorHit = floorHit.point;
             //Debug.Log(floorHit.point);
-            CatisMoving = true;
+            if (Cat == true)
+            {
+                Debug.LogWarning("E");
+                CatisMoving = true;
+            }
             return true;
         }
-        CatisMoving = false;
+        if (Cat == true)
+        {
+            Debug.LogWarning("I");
+            CatisMoving = false;
+        }
         return false;
         
     }

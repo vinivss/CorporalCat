@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+ 
 public class DestroyBarricade : MonoBehaviour
 {
     [SerializeField]List<GameObject> Barricades = new List<GameObject>();
@@ -11,8 +11,9 @@ public class DestroyBarricade : MonoBehaviour
         {
             foreach(var n in Barricades)
             {
-                DestroyImmediate(n.gameObject);
+                Destroy(n.gameObject);
             }
+            Destroy(other.gameObject);
         }
     }
 }
