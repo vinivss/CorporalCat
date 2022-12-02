@@ -5,7 +5,6 @@ using UnityEngine;
 public class moveTruck : MonoBehaviour
 {
     public CameraSwitch cam;
-    public CheckIfVisible see;
     public pickUp p;
 
     public Rigidbody rb;
