@@ -47,7 +47,7 @@ public class Waypoints : MonoBehaviour
         {
             return transform.GetChild(0);
         }
-        Catanim.SetBool("Win", true);
+        Catanim.Play("Win", -1, 0f);
         return null;
     }
 }
