@@ -22,6 +22,7 @@ public class WaypointFollow : MonoBehaviour
     bool hitWall;
     bool hitFloor;
 
+
     
 
     // Start is called before the first frame update
@@ -47,7 +48,6 @@ public class WaypointFollow : MonoBehaviour
                 currentWaypoint = waypoints.GetNextWaypoint(currentWaypoint);
             }
         }
-
     }
 
     private void OnDrawGizmos()

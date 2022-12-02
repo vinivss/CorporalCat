@@ -6,10 +6,9 @@ TagManager:
   tags:
   - CameraFollow
   - Waypoint
-  - cannon
-  - ball
-  - wall
-  - cat
+  - Pencil
+  - Cannonball
+  - Torch
   layers:
   - Default
   - TransparentFX

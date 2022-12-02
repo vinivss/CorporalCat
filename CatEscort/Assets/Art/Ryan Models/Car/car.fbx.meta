@@ -8,32 +8,32 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: base
-    second: {fileID: 2100000, guid: 0f5bae27adccd804da5fc5d1ce04658b, type: 2}
+    second: {fileID: 6719245597448002910, guid: d2d068f744a74ef458e22b8228573390, type: 3}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: bumper_b
-    second: {fileID: 2100000, guid: 39bcc320f1db71f48855af7c3306cdaf, type: 2}
+    second: {fileID: -5352597471007782525, guid: d2d068f744a74ef458e22b8228573390, type: 3}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: bumper_f
-    second: {fileID: 2100000, guid: 29f7bf9252b24c6458f6327454726cb2, type: 2}
+    second: {fileID: -5352597471007782525, guid: d2d068f744a74ef458e22b8228573390, type: 3}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: center
-    second: {fileID: 2100000, guid: 38aed74a663c95541b53d12ef8f2473f, type: 2}
+    second: {fileID: -876546973899608171, guid: dd5a9349387ae3c4a99389072cc0dd59, type: 3}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: grate_f
-    second: {fileID: 2100000, guid: 7cfb0f7e40a1c9e4d8500203a396d439, type: 2}
+    second: {fileID: -5352597471007782525, guid: d2d068f744a74ef458e22b8228573390, type: 3}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: keyhole
-    second: {fileID: 2100000, guid: 9cc40c41d0945c64597876fcfad5ad62, type: 2}
+    second: {fileID: -4955138205652975620, guid: 856c5533f9705d9499dbaf3bfc0bf784, type: 3}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -48,12 +48,12 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: steering_w
-    second: {fileID: 2100000, guid: 9af07295791926d48b9bcc21c20e9dae, type: 2}
+    second: {fileID: 4092451295457467939, guid: 502f34d5fd444b147ba03cc8921e3288, type: 3}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: wheels
-    second: {fileID: 2100000, guid: 38ef15ecb2ab88d41984e091f5b5e4ef, type: 2}
+    second: {fileID: -27775801278759386, guid: d2d068f744a74ef458e22b8228573390, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
