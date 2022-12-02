@@ -2477,7 +2477,7 @@ MonoBehaviour:
   Events:
     m_PersistentCalls:
       m_Calls: []
-  CameraFollow: {fileID: 0}
+  CameraFollow: {fileID: 1294177330}
   corporalCat: {fileID: 532938371}
 --- !u!4 &1855382342
 Transform:
