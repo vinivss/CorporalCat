@@ -6,7 +6,7 @@ public class turnCannon : MonoBehaviour
 {
     public FireBullet fb;
     public CameraSwitch cam;
-
+    public bool isTurned = false;
     /*void Start()
     {
         fb = GameObject.FindGameObjectWithTag("tagA").GetComponent<FireBullet>();
@@ -26,6 +26,7 @@ public class turnCannon : MonoBehaviour
             
             transform.Rotate(rotationToAdd);
             fb.turn = false;
+            isTurned = true;
         }
         
     }

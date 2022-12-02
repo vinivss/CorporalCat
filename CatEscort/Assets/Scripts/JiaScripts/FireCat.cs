@@ -6,7 +6,8 @@ public class FireCat : MonoBehaviour
 {
 
     public WaypointFollow wf;
-
+    public OpenSesame os;
+    public CameraSwitch cam;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +22,9 @@ public class FireCat : MonoBehaviour
 
     public void shootCat()
     {
-        wf.moveSpeed = 10f;
+        if(os.canPass == true && cam.CamIndex == 2) {
+            wf.moveSpeed = 100f;
+        }
+        
     }
 }
