@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class WaypointFollow : MonoBehaviour
 {
-    [SerializeField]Waypoints waypoints;
+    public Waypoints waypoints;
 
     [SerializeField] float moveSpeed = 5f;
 
@@ -14,13 +14,14 @@ public class WaypointFollow : MonoBehaviour
 
     [SerializeField] float wallCheckdistance = 1.5f;
     [SerializeField] float floorCheckDistance = 2f;
-
+    //[SerializeField] bool checkFloor = true;
     public bool CatisMoving;
 
     Vector3 WallHit;
     Vector3 FloorHit;
     bool hitWall;
     bool hitFloor;
+
     
 
     // Start is called before the first frame update

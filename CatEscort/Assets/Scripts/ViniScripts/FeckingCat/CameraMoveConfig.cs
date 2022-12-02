@@ -31,7 +31,7 @@ public class CameraMoveConfig : MonoBehaviour
             animatonDirection = new Vector2(-1f, 0f);
         }
 
-         if(angle < backAngle)
+        else if(angle < backAngle)
         {
             //back animation
             animatonDirection = new Vector2(0f, 1f);
