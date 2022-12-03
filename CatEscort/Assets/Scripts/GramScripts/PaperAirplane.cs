@@ -6,7 +6,7 @@ public class PaperAirplane : MonoBehaviour
 {
 
     public Rigidbody airplane;
-    public float fwdForce = 10.0f;
+    public float fwdForce = 50.0f;
     public CameraSwitch cam;
     // Start is called before the first frame update
     void Start()
